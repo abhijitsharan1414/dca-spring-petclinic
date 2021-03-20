@@ -12,7 +12,7 @@ FROM openjdk:jre-alpine3.8 AS production
 
 WORKDIR /app
 
-# COPY --from=builder /build/java.jar .
+COPY --from=builder /build/java.jar .
 
 # ENTRYPOINT ["java","-jar"]
 
