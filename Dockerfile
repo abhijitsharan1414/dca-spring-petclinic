@@ -8,7 +8,7 @@ RUN mvn install
 
 RUN mv target/*jar java.jar
 
-# FROM openjdk:jre-alpine3.8 AS production
+FROM openjdk:jre-alpine3.8 AS production
 
 # WORKDIR /app
 
